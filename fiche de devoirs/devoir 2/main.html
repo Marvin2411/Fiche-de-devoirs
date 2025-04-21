@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comptage de Mots</title>
+  <script src="script2.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-6 rounded shadow-lg w-full max-w-2xl">
+    <h1 class="text-2xl font-bold mb-4 text-center">Application de Comptage de Mots</h1>
+    <textarea id="textInput" class="w-full p-4 border rounded focus:outline-none focus:ring focus:border-blue-300" rows="10" placeholder="Tapez ou collez votre texte ici..."></textarea>
+    <div class="mt-4">
+      <button id="clearBtn" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Effacer</button>
+    </div>
+    <div class="mt-6 space-y-2">
+      <p class="text-gray-700">Nombre total de mots : <span id="wordCount">0</span></p>
+      <p class="text-gray-700">Nombre total de caractères (avec espaces) : <span id="charCountWithSpaces">0</span></p>
+      <p class="text-gray-700">Nombre total de caractères (sans espaces) : <span id="charCountWithoutSpaces">0</span></p>
+      <p class="text-gray-700">Longueur moyenne des mots : <span id="averageWordLength">0</span></p>
+      <p class="text-gray-700">Temps estimé de lecture : <span id="readingTime">0 sec</span></p>
+    </div>
+  </div>
+</body>
+</html>

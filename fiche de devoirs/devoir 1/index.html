@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculatrice</title>
+  <script src="script1.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-300 flex items-center justify-center min-h-screen">
+  <div class="bg-white rounded shadow-lg p-5 max-w-sm w-full">
+    <!-- Écran d'affichage -->
+    <div id="display" class="bg-gray-200 rounded text-right p-4 text-xl mb-4">0</div>
+    <!-- Boutons de la calculatrice -->
+    <div class="grid grid-cols-4 gap-2">
+     <!-- Boutons numériques et d'opérations -->
+      <button class="btn">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button class="btn operation">/</button>
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button>
+      <button class="btn operation">*</button>
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="btn operation">-</button>
+      <button class="btn">0</button>
+      <button class="btn">.</button>
+      <button class="btn operation">+</button>
+      <button class="btn equal bg-blue-500 text-white">=</button>
+      <button class="btn clear bg-red-500 text-white col-span-4">C</button>
+    </div>
+  </div>
+</body>
+</html>
